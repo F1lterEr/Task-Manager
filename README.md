@@ -11,7 +11,7 @@
 > Intelij Idea, Java 8.0, Архиватор WinRar
 ### Установка
 Для установки приложения потребуется скачать архив WinRar из данного проекта, либо написать следующую команду в командной строке
-> git clone https://github.com/F1lterEr/Accounting-for-intra-warehouse-cargo-movement.git Путь/к/вашей/папке
+> git clone https://github.com/F1lterEr/Task-Manager.git Путь/к/вашей/папке
 
 Последним действием Вы должны открыть среду разработки Intelij Idea, нажать на кнопки
 > File - Open - Путь к распакованному проекту
