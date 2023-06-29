@@ -6,14 +6,13 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.taskmanager.MainController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #1E90FF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.taskmanager.MainController">
    <children>
-      <ListView fx:id="taskslist" layoutX="177.0" layoutY="114.0" prefHeight="263.0" prefWidth="546.0" />
-      <Button fx:id="AddButton" layoutX="126.0" layoutY="400.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="143.0" text="Добавить" />
-      <Button fx:id="DeleteButton" layoutX="126.0" layoutY="508.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="143.0" text="Удалить" />
-      <Button fx:id="EdtButton" layoutX="623.0" layoutY="508.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="143.0" text="Редактировать" />
-      <Button fx:id="InfoButton" layoutX="623.0" layoutY="400.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="143.0" text="Информация о задаче" />
+      <ListView fx:id="taskslist" layoutX="177.0" layoutY="114.0" prefHeight="263.0" prefWidth="546.0" style="-fx-background-color: #4682B4;" />
+      <Button fx:id="AddButton" layoutX="126.0" layoutY="400.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="143.0" style="-fx-background-color: #696969;" text="Добавить" textFill="WHITE" />
+      <Button fx:id="DeleteButton" layoutX="126.0" layoutY="508.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="143.0" style="-fx-background-color: #696969;" text="Удалить" textFill="WHITE" />
+      <Button fx:id="EdtButton" layoutX="623.0" layoutY="508.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="143.0" style="-fx-background-color: #696969;" text="Редактировать" textFill="WHITE" />
+      <Button fx:id="InfoButton" layoutX="623.0" layoutY="400.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="143.0" style="-fx-background-color: #696969;" text="Информация о задаче" textFill="WHITE" />
       <Text layoutX="400.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Задачи" wrappingWidth="98.19992065429688">
          <font>
             <Font size="30.0" />

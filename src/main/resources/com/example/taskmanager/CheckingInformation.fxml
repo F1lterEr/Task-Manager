@@ -5,54 +5,74 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.taskmanager.ControllerCheck">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="600.0" style="-fx-background-color: #1E90FF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.taskmanager.ControllerCheck">
    <children>
       <Text layoutX="155.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Информация о грузе">
          <font>
             <Font size="30.0" />
          </font>
       </Text>
-      <Text layoutX="280.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Имя">
+      <Text layoutX="91.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Имя">
          <font>
             <Font size="20.0" />
          </font>
       </Text>
-      <Text layoutX="231.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Дата прибытия">
+      <Text layoutX="89.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Дата">
          <font>
             <Font size="20.0" />
          </font>
       </Text>
-      <Text layoutX="238.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Дата отбытия">
+      <Text layoutX="60.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Приоритет">
          <font>
             <Font size="20.0" />
          </font>
       </Text>
-      <Text layoutX="215.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Местонахождение">
+      <Text layoutX="81.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Статус">
          <font>
             <Font size="20.0" />
          </font>
       </Text>
-      <Button fx:id="backButton" layoutX="248.0" layoutY="392.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="104.0" text="Назад">
+      <Button fx:id="backButton" layoutX="248.0" layoutY="392.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="104.0" style="-fx-background-color: #696969;" text="Назад" textFill="WHITE">
          <font>
             <Font size="15.0" />
          </font>
       </Button>
-      <Text fx:id="nameText" layoutX="145.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="309.44976806640625">
+      <Text fx:id="nameText" layoutX="14.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="193.44976806640625">
          <font>
             <Font size="23.0" />
          </font>
       </Text>
-      <Text fx:id="dateallowText" layoutX="145.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="309.44976806640625">
+      <Text fx:id="dateText" layoutX="29.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="162.249755859375">
          <font>
             <Font size="23.0" />
          </font>
       </Text>
-      <Text fx:id="datedeclaimedText" layoutX="145.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="309.44976806640625">
+      <Text fx:id="priorityText" layoutX="58.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="104.0">
          <font>
             <Font size="23.0" />
          </font>
       </Text>
-      <Text fx:id="locationText" layoutX="145.0" layoutY="357.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="309.44976806640625">
+      <Text fx:id="statusText" layoutX="13.0" layoutY="368.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="193.4497680664063">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Text layoutX="311.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Дополнительные задачи">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="subtasksText" layoutX="296.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="255.04974365234375">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Text layoutX="378.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Описание">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="descriptionText" layoutX="264.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="319.0496826171875">
          <font>
             <Font size="23.0" />
          </font>

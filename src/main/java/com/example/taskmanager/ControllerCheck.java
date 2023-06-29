@@ -27,13 +27,18 @@ public class ControllerCheck {
     private Button backButton;
 
     @FXML
-    public Text dateallowText;
+    public Text dateText;
 
     @FXML
-    public Text datedeclaimedText;
+    public Text priorityText;
 
     @FXML
-    public Text locationText;
+    public Text statusText;
+    @FXML
+    public Text subtasksText;
+
+    @FXML
+    public Text descriptionText;
 
     @FXML
     public Text nameText;
@@ -53,7 +58,7 @@ public class ControllerCheck {
                 Stage stage = new Stage();
                 stage.initModality(Modality.APPLICATION_MODAL);
                 stage.setOpacity(1);
-                stage.setTitle("Проверка грузов");
+                stage.setTitle("Задачи");
                 stage.setScene(new Scene(root, 600, 486));
                 stage.show();
             } catch (IOException e) {
@@ -62,14 +67,16 @@ public class ControllerCheck {
     }
     //Метод отображения информации
     public void toDisplay() throws Exception {
-        Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/cargobd", "root","123");
-        String ch = String.format("select * from cargo WHERE id='%s'", MainController.llist.get(MainController.id));
+        Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/taskdb", "root","123");
+        String ch = String.format("select * from tasks WHERE id='%s'", MainController.llist.get(MainController.id));
         ResultSet rs = connection.createStatement().executeQuery(ch);
         while (rs.next()) {
             nameText.setText(rs.getString(2));
-            dateallowText.setText(rs.getString(3));
-            datedeclaimedText.setText(rs.getString(4));
-            locationText.setText(rs.getString(5));
+            dateText.setText(rs.getString(3));
+            priorityText.setText(rs.getString(4));
+            statusText.setText(rs.getString(5));
+            subtasksText.setText(rs.getString(6));
+            descriptionText.setText(rs.getString(7));
         }
     }
 }
